@@ -1,0 +1,51 @@
+/**
+
+                            Online Swift Compiler.
+                Code, Compile, Run and Debug Swift script online.
+Write your code in this editor and press "Run" button to execute it.
+
+*/
+
+
+import Foundation
+
+print("Hello World")
+var num:Int=10
+num=20
+print(num)
+let pi=3.14
+
+print(pi)
+let n:Int=15
+print(n)
+var roll:Int
+roll=90
+print(roll)
+
+var uni=12
+print(uni)
+var disCollect:Float=10.1
+var s:Float
+s=190.099
+print(s)
+var f=8.987
+print(f)    
+
+var greetings:String="hello"
+print("greeting for the day \(greetings)")
+
+greetings=greetings+"morning"
+print(greetings)
+
+var name="Christopher"
+let startIndex=name.startIndex
+print("character at start index is \(name[startIndex])")
+
+let index=name.index(startIndex,offsetBy:5)
+print("character at index is \(name[index])")
+print("substring from start to index =" + name[...index])
+print("substring from index to end =" + name[index...])
+
+let index1=name.index(startIndex,offsetBy:2)
+let index2=name.index(startIndex,offsetBy:8)
+print("substring from index1 to index2 =" + name[index1...index2])
