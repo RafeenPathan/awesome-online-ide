@@ -1,0 +1,76 @@
+/**
+
+                            Online Swift Compiler.
+                Code, Compile, Run and Debug Swift script online.
+Write your code in this editor and press "Run" button to execute it.
+
+*/
+
+
+print("Hello World")
+
+//operators- arithmetic operators,assignment operators,logical operators, 
+//comparison operators, range operators,ternary operators,
+//Nil-Coalescing operators
+
+var n1=20,n2=10
+print(n1+n2)
+print(n1-n2)
+print(n1*n2)
+print(n1/n2)
+print(n1%n2)
+
+var num=8
+print(num+=1)
+print(num-=3)
+print(num*=2)
+print(num/=2)
+print(num%=4)
+
+
+var num1=20,num2=10
+print(num1>15 && num2>15)
+print(num1>15 || num2<5)
+print(!(num1>15))
+
+var a=20,b=10,c=20  //==,!=,>,>=,<,<=
+print(a==c)
+//print(a!=b)
+print(a<=c)
+print(a>=b)
+
+
+
+/*range operators - closed range, half open range, one sided range*/
+
+//closed range(a...b)
+
+var i=1...5
+print(i)
+print(i.contains(3))
+
+//half-open range operators
+var ind=1..<5
+print(ind)
+print(ind.contains(5))
+
+//one sided range operator(a...,...a)
+
+var index=1...
+print(index) //partialRangeFrom<Int>(lowerBound:1)
+print(index.contains(200))
+
+// Ternary 
+var m=10,k=20
+var minValue=(m<k) ? m:k
+print(minValue)
+var maxValue=(m>k) ? m:k
+print(maxValue)
+
+//Nil-Coalescing-variable assigned with value, variable without value
+
+var greet : String?
+print(greet ?? "Hello all")
+
+greet="welcome to you all"
+print(greet ?? "hello morning")
